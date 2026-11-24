@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>SOS Charitable Trust | Charitable Trust In India</title>
+<meta name="description" content="SOS Charitable Trust is a Non-Profitable & Non Religious Charitable Trust In India" />
+<meta name="keywords" content="SOS Charitable Trust IN India" />
+<meta name="author" content="SOS Charitable Trust">
+<meta name="google-site-verification" content="XLB8RmZkQV-poKT3UbshTSdFyt3AsZhz915hjAMQcTY" />
+<link rel="shortcut icon" href="img/favicon.png" />
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/font-awesome.min.css" />
+<script src="https://kit.fontawesome.com/b10f1f44ab.js" crossorigin="anonymous"></script>
+<style>
+:root{--green:#48C926;--green-dark:#00994b;--orange:#eea245;--orange-dark:#F98D37;--dark:#222;--text:#565656;--light:#f6faf3;}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Open Sans',sans-serif;color:var(--text);background:#fff;line-height:1.7}
+a{text-decoration:none;color:inherit}
+img{max-width:100%;display:block}
+.wrap{max-width:1200px;margin:0 auto;padding:0 16px}
+.btn{display:inline-block;padding:12px 26px;border-radius:6px;font-weight:700;text-transform:uppercase;font-size:14px;color:#fff;background:var(--green-dark);transition:.25s}
+.btn:hover{background:var(--green)}
+.btn-orange{background:var(--orange)}.btn-orange:hover{background:var(--orange-dark)}
+.tag{display:inline-block;color:var(--orange-dark);font-weight:700;text-transform:uppercase;letter-spacing:1.5px;font-size:14px;margin-bottom:8px}
+h2.title{font-size:36px;line-height:1.25;color:var(--dark);font-weight:800;margin-bottom:18px}
+h2.title span{color:var(--green-dark)}
+section{padding:80px 0}
+.center{text-align:center}
+
+/* header */
+header{position:sticky;top:0;z-index:50;background:#fff;box-shadow:0 2px 12px rgba(0,0,0,.08)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:20px;height:84px}
+.nav .logo img{height:64px}
+.menu{display:flex;list-style:none;gap:4px;align-items:center}
+.menu>li{position:relative}
+.menu>li>a{display:block;padding:30px 12px;font-weight:700;color:var(--dark);font-size:15px}
+.menu>li>a:hover{color:var(--green-dark)}
+.menu ul{position:absolute;top:100%;left:0;min-width:220px;background:#fff;list-style:none;box-shadow:0 8px 24px rgba(0,0,0,.12);border-top:3px solid var(--green);opacity:0;visibility:hidden;transform:translateY(10px);transition:.2s}
+.menu li:hover>ul{opacity:1;visibility:visible;transform:none}
+.menu ul a{display:block;padding:10px 18px;font-size:14px;border-bottom:1px solid #eee}
+.menu ul a:hover{background:var(--light);color:var(--green-dark)}
+.nav-btns{display:flex;gap:10px}
+.burger{display:none;background:none;border:0;font-size:26px;color:var(--dark);cursor:pointer}
+
+/* hero */
+.hero{position:relative;overflow:hidden;background:#000}
+.slides{display:flex;transition:transform .7s ease}
+.slides img{width:100%;flex:0 0 100%;object-fit:cover;max-height:620px}
+.hero button{position:absolute;top:50%;transform:translateY(-50%);width:48px;height:48px;border-radius:50%;border:0;background:rgba(255,255,255,.85);font-size:20px;cursor:pointer;color:var(--dark)}
+.hero button:hover{background:var(--green);color:#fff}
+.hero .prev{left:20px}.hero .next{right:20px}
+.dots{position:absolute;bottom:18px;width:100%;display:flex;justify-content:center;gap:8px}
+.dots span{width:12px;height:12px;border-radius:50%;background:rgba(255,255,255,.6);cursor:pointer}
+.dots span.on{background:var(--green)}
+
+/* mission intro */
+.intro{background:var(--light)}
+.intro p{max-width:900px;margin:0 auto;font-size:17px}
+
+/* alternating cause blocks */
+.cause{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.cause+.cause{margin-top:90px}
+.cause.rev .cause-img{order:2}
+.cause-img{position:relative}
+.cause-img img{border-radius:14px;width:100%;height:420px;object-fit:cover;position:relative;z-index:1}
+.cause-img:before{content:"";position:absolute;width:140px;height:140px;border-radius:50%;background:var(--orange);opacity:.25;top:-30px;left:-30px}
+.cause-img:after{content:"";position:absolute;width:180px;height:180px;border:10px dotted var(--green);border-radius:50%;bottom:-40px;right:-30px;opacity:.4}
+.cause p{margin-bottom:16px}
+
+/* tax banner */
+.tax{background:linear-gradient(90deg,var(--green-dark),var(--green));color:#fff;padding:40px 0}
+.tax .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.tax h3{font-size:26px;font-weight:800}
+
+/* projects */
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:40px}
+.card{background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 6px 24px rgba(0,0,0,.08);display:flex;flex-direction:column;transition:.25s}
+.card:hover{transform:translateY(-6px);box-shadow:0 12px 32px rgba(0,0,0,.14)}
+.card img{height:220px;width:100%;object-fit:cover}
+.card .body{padding:22px;flex:1;display:flex;flex-direction:column}
+.card h4{color:var(--dark);font-size:20px;margin-bottom:8px}
+.card p{font-size:14px;flex:1;margin-bottom:16px}
+.card .btn{align-self:flex-start;padding:9px 22px}
+
+/* news */
+.news{background:var(--light)}
+.news .card .date{font-size:13px;color:var(--orange-dark);font-weight:700;margin-bottom:6px}
+
+/* gallery */
+.gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:40px}
+.gallery img{width:100%;height:200px;object-fit:cover;border-radius:8px;transition:.3s}
+.gallery img:hover{transform:scale(1.04)}
+
+/* mission + volunteer */
+.join{background:linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),url('img/donation-bg2.jpg') center/cover fixed;color:#fff}
+.join .two{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.join .box{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.2);border-radius:14px;padding:40px}
+.join h2.title{color:#fff}
+.join .tag{color:var(--orange)}
+.join p{margin-bottom:22px}
+.taxinfo{padding:50px 0;text-align:center}
+.taxinfo p{max-width:900px;margin:0 auto 20px}
+
+/* footer */
+footer{background:#1A1A1A;color:#bbb;padding-top:70px}
+.fgrid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.4fr;gap:40px}
+footer h5{color:#fff;font-size:18px;margin-bottom:18px;position:relative;padding-bottom:10px}
+footer h5:after{content:"";position:absolute;left:0;bottom:0;width:40px;height:3px;background:var(--green)}
+footer ul{list-style:none}
+footer li{margin-bottom:9px}
+footer a:hover{color:var(--green)}
+footer .flogo{height:70px;margin-bottom:16px}
+.social{display:flex;gap:10px;margin-top:16px}
+.social a{width:38px;height:38px;border-radius:50%;background:#333;display:grid;place-items:center;color:#fff}
+.social a:hover{background:var(--green);color:#fff}
+.copy{border-top:1px solid #333;margin-top:50px;padding:20px 0;text-align:center;font-size:14px}
+
+/* ===== animations ===== */
+#progress{position:fixed;top:0;left:0;height:4px;width:0;background:linear-gradient(90deg,var(--green),var(--orange));z-index:100}
+header{transition:box-shadow .3s}
+.nav{transition:height .3s}
+header.small .nav{height:68px}
+header.small .logo img{height:50px}
+.logo img{transition:height .3s}
+.menu>li>a{position:relative}
+.menu>li>a:after{content:"";position:absolute;left:12px;right:12px;bottom:22px;height:2px;background:var(--green);transform:scaleX(0);transition:transform .3s}
+.menu>li:hover>a:after{transform:scaleX(1)}
+.btn{position:relative;overflow:hidden;box-shadow:0 4px 14px rgba(0,153,75,.25)}
+.btn:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(0,153,75,.35)}
+.btn:before{content:"";position:absolute;top:0;left:-75%;width:50%;height:100%;background:linear-gradient(120deg,transparent,rgba(255,255,255,.45),transparent);transform:skewX(-20deg)}
+.btn:hover:before{animation:shine .7s}
+@keyframes shine{to{left:130%}}
+.pulse{animation:pulse 2s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(238,162,69,.7)}70%{box-shadow:0 0 0 16px rgba(238,162,69,0)}100%{box-shadow:0 0 0 0 rgba(238,162,69,0)}}
+.slides a{flex:0 0 100%;overflow:hidden}
+.slides img{transition:transform 6s ease}
+.slides a.active img{transform:scale(1.08)}
+.cause-img:before{animation:float 6s ease-in-out infinite}
+.cause-img:after{animation:spin 30s linear infinite}
+@keyframes float{50%{transform:translate(20px,20px)}}
+@keyframes spin{to{transform:rotate(360deg)}}
+.cause-img img{transition:transform .5s}
+.cause-img:hover img{transform:scale(1.03) rotate(-1deg)}
+.card img{transition:transform .6s}
+.card:hover img{transform:scale(1.1)}
+.card{position:relative}.card>img{overflow:hidden}
+.card .imgw{overflow:hidden}
+.tag:before{content:"";display:inline-block;width:24px;height:2px;background:currentColor;vertical-align:middle;margin-right:8px}
+.reveal{opacity:0;transform:translateY(40px);transition:opacity .8s ease,transform .8s ease}
+.reveal.left{transform:translateX(-60px)}.reveal.right{transform:translateX(60px)}.reveal.zoom{transform:scale(.85)}
+.reveal.in{opacity:1;transform:none}
+.stats{background:linear-gradient(135deg,var(--green-dark),var(--green));color:#fff;padding:60px 0}
+.stats .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;text-align:center}
+.stat i{font-size:38px;margin-bottom:10px;display:inline-block;animation:bob 3s ease-in-out infinite}
+.stat b{display:block;font-size:42px;font-weight:800;line-height:1.1}
+.stat span{opacity:.9;font-weight:600}
+@keyframes bob{50%{transform:translateY(-8px)}}
+.tax h3{background:linear-gradient(90deg,#fff 40%,#ffe2b8 50%,#fff 60%);background-size:200% auto;-webkit-background-clip:text;background-clip:text;color:transparent;animation:sheen 4s linear infinite}
+@keyframes sheen{to{background-position:-200% center}}
+.gallery a{overflow:hidden;border-radius:8px;position:relative;display:block}
+.gallery a:after{content:"\f00e";font-family:FontAwesome;position:absolute;inset:0;display:grid;place-items:center;font-size:28px;color:#fff;background:rgba(0,153,75,.55);opacity:0;transition:.3s}
+.gallery a:hover:after{opacity:1}
+.gallery a:hover img{transform:scale(1.12)}
+#lb{position:fixed;inset:0;background:rgba(0,0,0,.9);display:none;place-items:center;z-index:200;cursor:zoom-out;padding:16px}
+#lb.on{display:grid;animation:fade .3s}
+#lb img{max-height:88vh;border-radius:8px;animation:pop .35s}
+@keyframes fade{from{opacity:0}}@keyframes pop{from{transform:scale(.8)}}
+.join .box{transition:transform .4s,background .4s}
+.join .box:hover{transform:translateY(-8px);background:rgba(255,255,255,.14)}
+#top{position:fixed;right:20px;bottom:20px;width:46px;height:46px;border-radius:50%;background:var(--green-dark);color:#fff;border:0;font-size:18px;cursor:pointer;opacity:0;transform:translateY(20px);transition:.3s;z-index:60}
+#top.on{opacity:1;transform:none}
+#top:hover{background:var(--orange)}
+.social a{transition:.3s}.social a:hover{transform:translateY(-4px) rotate(8deg)}
+footer li a{transition:padding .3s}footer li a:hover{padding-left:6px}
+@media(max-width:600px){.stats .wrap{grid-template-columns:repeat(2,1fr)}.stat b{font-size:32px}}
+/* mouse effects */
+.cur-dot,.cur-ring{position:fixed;top:0;left:0;pointer-events:none;z-index:300;border-radius:50%;transform:translate(-50%,-50%)}
+.cur-dot{width:8px;height:8px;background:var(--green-dark)}
+.cur-ring{width:38px;height:38px;border:2px solid var(--green);transition:width .25s,height .25s,background .25s,border-color .25s}
+.cur-ring.big{width:64px;height:64px;background:rgba(72,201,38,.15);border-color:var(--orange)}
+body.has-cursor,body.has-cursor a,body.has-cursor button{cursor:none}
+.tilt{transform-style:preserve-3d;will-change:transform}
+.card.tilt{transition:transform .15s ease-out,box-shadow .25s}
+.card .glare{position:absolute;inset:0;pointer-events:none;border-radius:12px;opacity:0;transition:opacity .3s;background:radial-gradient(circle at var(--gx,50%) var(--gy,50%),rgba(255,255,255,.35),transparent 60%);z-index:2}
+.card:hover .glare{opacity:1}
+.ripple{position:absolute;border-radius:50%;background:rgba(255,255,255,.55);transform:scale(0);animation:rip .6s linear;pointer-events:none}
+@keyframes rip{to{transform:scale(4);opacity:0}}
+.spark{position:fixed;width:6px;height:6px;border-radius:50%;pointer-events:none;z-index:299;animation:spk .8s ease-out forwards}
+@keyframes spk{to{transform:translate(var(--dx),var(--dy)) scale(0);opacity:0}}
+.hero .slides{transition:transform .7s ease}
+.hero .pl{transition:transform .2s ease-out}
+/* floating donate */
+.float-donate{position:fixed;right:0;top:50%;transform:translateY(-50%);z-index:70;writing-mode:vertical-rl;background:var(--green-dark);color:#fff;font-weight:800;text-transform:uppercase;letter-spacing:2px;padding:18px 12px;border-radius:10px 0 0 10px;box-shadow:-4px 4px 18px rgba(0,0,0,.2);animation:pulse 2s infinite}
+.float-donate i{transform:rotate(90deg);margin-bottom:8px}
+.float-donate:hover{background:var(--orange);color:#fff}
+.mob-bar{display:none}
+.nav-donate-mob{display:none}
+@media(max-width:960px){
+ .nav{height:68px}.nav .logo img{height:50px}
+ .menu{top:68px}
+ .nav-btns{display:none}
+ .nav-donate-mob{display:inline-block;padding:8px 14px;font-size:12px;margin-left:auto}
+ .float-donate{display:none}
+ .mob-bar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:80;background:#fff;box-shadow:0 -4px 16px rgba(0,0,0,.12);padding:8px 10px calc(8px + env(safe-area-inset-bottom));gap:8px}
+ .mob-bar a{flex:1;text-align:center;padding:12px 6px;border-radius:8px;font-weight:800;font-size:13px;text-transform:uppercase;color:#fff;background:var(--green-dark)}
+ .mob-bar a.call{flex:0 0 52px;background:var(--orange)}
+ .mob-bar a.wa{flex:0 0 52px;background:#25D366}
+ .mob-bar a.main{animation:pulse 2s infinite}
+ body{padding-bottom:72px}
+ #top{bottom:86px;right:14px;width:42px;height:42px}
+ .slides img{height:46vw;min-height:200px}
+ .hero .prev{left:8px}.hero .next{right:8px}
+}
+@media(max-width:600px){
+ .wrap{padding:0 16px}
+ h2.title{font-size:25px}
+ .intro p{font-size:15px}
+ .tag{font-size:12px}
+ .cause+.cause{margin-top:60px}
+ .cause-img:before{width:90px;height:90px;top:-16px;left:-10px}
+ .cause-img:after{width:110px;height:110px;right:-10px;bottom:-20px}
+ .cause .btn,.taxinfo .btn,.join .btn{display:block;text-align:center}
+ .tax{padding:30px 0}.tax .wrap{flex-direction:column;text-align:center}.tax h3{font-size:19px}
+ .card img{height:190px}
+ .stats{padding:40px 0}.stat i{font-size:28px}.stat span{font-size:13px}
+ .join{background-attachment:scroll}
+ .fgrid{gap:28px}
+ .copy{font-size:12px}
+ .menu{max-height:calc(100vh - 68px)}
+ .reveal.left,.reveal.right{transform:translateY(30px)}
+}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+
+/* responsive */
+@media(max-width:1100px){.menu>li>a{padding:30px 8px;font-size:14px}.nav-btns .btn-orange{display:none}}
+@media(max-width:960px){
+ .burger{display:block}
+ .menu{position:absolute;top:84px;left:0;right:0;background:#fff;flex-direction:column;align-items:stretch;gap:0;display:none;box-shadow:0 8px 20px rgba(0,0,0,.1);max-height:75vh;overflow:auto}
+ .menu.open{display:flex}
+ .menu>li>a{padding:12px 16px;border-bottom:1px solid #eee}
+ .menu ul{position:static;opacity:1;visibility:visible;transform:none;box-shadow:none;border:0;display:none;padding-left:16px}
+ .menu li.open>ul{display:block}
+ .cause,.join .two{grid-template-columns:1fr;gap:40px}
+ .cause.rev .cause-img{order:0}
+ .grid{grid-template-columns:repeat(2,1fr)}
+ .gallery{grid-template-columns:repeat(3,1fr)}
+ .fgrid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:600px){
+ section{padding:56px 0}
+ h2.title{font-size:28px}
+ .nav-btns{display:none}
+ .grid,.fgrid{grid-template-columns:1fr}
+ .gallery{grid-template-columns:repeat(2,1fr)}
+ .gallery img{height:140px}
+ .cause-img img{height:280px}
+ .hero button{width:36px;height:36px;font-size:16px}
+ .join .box{padding:26px}
+}
+/* new hero slider */
+.hero{background:#0d2a1a}
+.slides .slide{flex:0 0 100%;position:relative;overflow:hidden;height:600px}
+.slide .bg{position:absolute;inset:-40px;background-size:cover;background-position:center;filter:blur(28px) brightness(.45) saturate(1.2);transform:scale(1.1)}
+.slide:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(6,40,22,.85),rgba(6,40,22,.35))}
+.slide .inner{position:relative;z-index:2;max-width:1240px;height:100%;margin:0 auto;padding:50px 90px;display:grid;grid-template-columns:5fr 7fr;gap:50px;align-items:center}
+.photo{margin:0;height:100%;display:flex;align-items:center;justify-content:center;position:relative}
+.photo img{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;border-radius:14px;border:6px solid #fff;box-shadow:0 25px 60px rgba(0,0,0,.45),-14px 14px 0 var(--orange);transform:scale(.94);opacity:0;transition:transform 1s ease,opacity 1s ease}
+.slide.active .photo img{transform:none;opacity:1}
+.cap{color:#fff}
+.num{display:block;font-size:64px;line-height:1;font-weight:800;color:transparent;-webkit-text-stroke:1.5px rgba(255,255,255,.45);margin-bottom:10px}
+.cap-tag{display:inline-block;color:var(--orange);font-weight:700;text-transform:uppercase;letter-spacing:2px;font-size:13px;margin-bottom:12px;padding-left:34px;position:relative}
+.cap-tag:before{content:"";position:absolute;left:0;top:50%;width:24px;height:2px;background:var(--orange)}
+.cap h1{font-size:40px;line-height:1.2;font-weight:800;margin-bottom:16px}
+.cap h1 span{color:var(--green)}
+.cap p{font-size:16px;opacity:.85;border-left:3px solid var(--green);padding-left:14px}
+.cap>*{opacity:0;transform:translateX(-30px);transition:opacity .7s ease,transform .7s ease}
+.slide.active .cap>*{opacity:1;transform:none}
+.slide.active .cap h1{transition-delay:.15s}.slide.active .cap p{transition-delay:.3s}
+@media(max-width:960px){
+ .slides .slide{height:auto}
+ .slide .inner{grid-template-columns:1fr;padding:20px 16px 56px;gap:18px}
+ .photo{order:-1;height:auto;aspect-ratio:4/3}
+ .photo img{border-width:4px;box-shadow:0 14px 30px rgba(0,0,0,.4),-8px 8px 0 var(--orange)}
+ .num{font-size:40px;margin-bottom:4px}
+ .cap h1{font-size:24px;margin-bottom:10px}
+ .cap p{font-size:14px}
+ .cap-tag{font-size:11px}
+ .hero button{top:30%;width:36px;height:36px;font-size:14px}
+}
+</style>
+</head>
+<body>
+
+<header>
+ <div class="wrap nav">
+  <a href="index.html" class="logo"><img src="img/logo.png" alt="SOS Child Charitable Trust"></a>
+  <ul class="menu" id="menu">
+   <li><a href="index.html">Home</a></li>
+   <li><a href="#">About <i class="fa fa-angle-down"></i></a>
+    <ul><li><a href="about.html">About Our NGO</a></li><li><a href="management.html">Management Team</a></li></ul></li>
+   <li><a href="medical-support.html">Medical</a></li>
+   <li><a href="shelter.html">Shelter</a></li>
+   <li><a href="#">Projects <i class="fa fa-angle-down"></i></a>
+    <ul>
+     <li><a href="education-support.html">Education Support</a></li>
+     <li><a href="support-education-empower-futures.html">Support Education</a></li>
+     <li><a href="oldage-support.html">Old Age Support</a></li>
+     <li><a href="medical-support.html">Medical Support</a></li>
+     <li><a href="women-empowerment.html">Women Empowerment</a></li>
+     <li><a href="Disaster-Relief.html">Disaster Relief</a></li>
+    </ul></li>
+   <li><a href="#">Media <i class="fa fa-angle-down"></i></a>
+    <ul><li><a href="gallery.html">Photo Gallery</a></li><li><a href="video-gallery.html">Video Gallery</a></li><li><a href="blog.html">Blogs</a></li><li><a href="news.html">News</a></li></ul></li>
+   <li><a href="#">Engage <i class="fa fa-angle-down"></i></a>
+    <ul><li><a href="bank-details.html">Bank Details</a></li><li><a href="upi-details.html">Donate by UPI</a></li><li><a href="contact.html">Contact</a></li><li><a href="join-volunteer.html">Become a Volunteer</a></li></ul></li>
+  </ul>
+  <div class="nav-btns">
+   <a href="support-education-empower-futures.html" class="btn btn-orange">Support Education</a>
+   <a href="donation.html" class="btn">Donate Now</a>
+  </div>
+  <a href="donation.html" class="btn nav-donate-mob">Donate Now</a>
+  <button class="burger" id="burger" aria-label="Menu"><i class="fa fa-bars"></i></button>
+ </div>
+</header>
+
+<div class="hero" id="hero">
+ <div class="slides" id="slides">
+  <div class="slide">
+   <div class="bg" style="background-image:url('home-newslider.jpeg')"></div>
+   <div class="inner">
+    <div class="cap"><b class="num">01</b>
+    <span class="cap-tag">Education Support</span>
+    <h1>Every Child Deserves a <span>School Bag</span> &amp; a Dream</h1>
+    <p>We distribute school kits, bags and stationery to underprivileged children so no dream is left behind for lack of supplies.</p>
+   </div>
+    <figure class="photo"><img src="home-newslider.jpeg" alt="SOS Child Charitable Trust volunteers distributing school bags to girls"></figure>
+   </div>
+  </div>
+  <div class="slide">
+   <div class="bg" style="background-image:url('home-newslider5.jpeg')"></div>
+   <div class="inner">
+    <div class="cap"><b class="num">02</b>
+    <span class="cap-tag">Scholarship Programme</span>
+    <h1>Rewarding Bright Minds, <span>Building Futures</span></h1>
+    <p>Scholarships and certificates of merit help deserving students stay in school and keep reaching higher.</p>
+   </div>
+    <figure class="photo"><img src="home-newslider5.jpeg" alt="Students receiving scholarship certificates from SOS Child Charitable Trust"></figure>
+   </div>
+  </div>
+  <div class="slide">
+   <div class="bg" style="background-image:url('home-newslider3.jpeg')"></div>
+   <div class="inner">
+    <div class="cap"><b class="num">03</b>
+    <span class="cap-tag">Women Empowerment</span>
+    <h1>Honouring Women Who <span>Drive Change</span></h1>
+    <p>We celebrate and support women auto-rickshaw drivers and self-reliant mothers who power their families and communities.</p>
+   </div>
+    <figure class="photo"><img src="home-newslider3.jpeg" alt="Volunteers felicitating women auto-rickshaw drivers"></figure>
+   </div>
+  </div>
+  <div class="slide">
+   <div class="bg" style="background-image:url('home-newslider2.jpeg')"></div>
+   <div class="inner">
+    <div class="cap"><b class="num">04</b>
+    <span class="cap-tag">Green Initiative</span>
+    <h1>Small Hands, <span>Greener Tomorrow</span></h1>
+    <p>Tree plantation drives teach children to care for nature and grow up as responsible citizens.</p>
+   </div>
+    <figure class="photo"><img src="home-newslider2.jpeg" alt="Children planting a marigold sapling"></figure>
+   </div>
+  </div>
+  <div class="slide">
+   <div class="bg" style="background-image:url('home-newslider4.jpeg')"></div>
+   <div class="inner">
+    <div class="cap"><b class="num">05</b>
+    <span class="cap-tag">Gau Seva &amp; Animal Care</span>
+    <h1>Compassion For <span>Every Living Being</span></h1>
+    <p>Our volunteers regularly serve fodder and care at gaushalas, because kindness knows no boundaries.</p>
+   </div>
+    <figure class="photo"><img src="home-newslider4.jpeg" alt="Volunteer feeding cows at a gaushala"></figure>
+   </div>
+  </div>
+ </div>
+ <button class="prev" aria-label="Previous"><i class="fa fa-chevron-left"></i></button>
+ <button class="next" aria-label="Next"><i class="fa fa-chevron-right"></i></button>
+ <div class="dots" id="dots"></div>
+</div>
+
+<section class="intro center">
+ <div class="wrap">
+  <h2 class="title">Our Mission: <span>Empowering Charities in India</span></h2>
+  <p>SOS Child Charitable Trust works every day to bring food, education, shelter, medicine and dignity to those who need it most. From sponsoring a child's schooling and delivering medicines, to caring for our elders and responding to disasters, our volunteers and donors make real change happen across India.</p>
+  <div style="margin-top:40px"><span class="tag">Help &amp; Donate Now</span><h2 class="title" style="margin:0">Find The Emergency Cause</h2></div>
+ </div>
+</section>
+
+<div class="stats">
+ <div class="wrap">
+  <div class="stat"><i class="fa fa-child"></i><b data-n="5000">0</b><span>Children Helped</span></div>
+  <div class="stat"><i class="fa fa-cutlery"></i><b data-n="100000">0</b><span>Meals Served</span></div>
+  <div class="stat"><i class="fa fa-heart"></i><b data-n="1200">0</b><span>Elders Cared For</span></div>
+  <div class="stat"><i class="fa fa-users"></i><b data-n="300">0</b><span>Volunteers</span></div>
+ </div>
+</div>
+
+<section style="padding-top:80px">
+ <div class="wrap">
+  <div class="cause">
+   <div class="cause-img"><img src="img/newimgsforhomepage/volunteer-child-care.jpeg" alt="Volunteer caring for a child"></div>
+   <div>
+    <span class="tag">Shelter Home</span>
+    <h2 class="title">Our <span>Shelter Home</span></h2>
+    <p>Thousands of children in India grow up without parents or a safe place to call home. Our shelter home gives them clothing, nutritious food, a warm home, education and the joy of celebrating festivals together like a family.</p>
+    <p>Your support helps every child grow up with love, safety and the confidence to build a better future.</p>
+    <a href="shelter.html" class="btn">Donate Now</a>
+   </div>
+  </div>
+  <div class="cause rev">
+   <div class="cause-img"><img src="img/newimgsforhomepage/school-bag-distribution-girls.jpeg" alt="School bag distribution"></div>
+   <div>
+    <span class="tag">Education</span>
+    <h2 class="title">Education for <span>Every Child</span></h2>
+    <p>Education is the surest path out of poverty. We run regular drives to provide stationery, school bags, uniforms, raincoats and fees so that no child has to leave school for lack of resources.</p>
+    <p>Sponsor a child's education today and open the door to a brighter tomorrow.</p>
+    <a href="education-support.html" class="btn">Donate Now</a>
+   </div>
+  </div>
+  <div class="cause">
+   <div class="cause-img"><img src="img/newimgsforhomepage/vrudhashram-elders-care.jpeg" alt="Elders at SOS Vrudhashram"></div>
+   <div>
+    <span class="tag">Old Age</span>
+    <h2 class="title">Our <span>Old Age Home</span></h2>
+    <p>Many elders are abandoned in their final years. We care for them with food, medicines, companionship and respect. With rising costs, every contribution matters.</p>
+    <p>Donate, volunteer or simply visit and spend time with our elders.</p>
+    <a href="oldage-support.html" class="btn">Donate Now</a>
+   </div>
+  </div>
+ </div>
+</section>
+
+<div class="tax">
+ <div class="wrap">
+  <h3>Under 80G Of Income Tax Act 1961 Get 50% Exemption On Your Donation</h3>
+  <a href="donation.html" class="btn btn-orange pulse">Donate Now</a>
+ </div>
+</div>
+
+<section>
+ <div class="wrap center">
+  <span class="tag">Our Projects</span>
+  <h2 class="title">Empowering Lives, <span>Transforming Futures</span></h2>
+  <div class="grid" style="text-align:left">
+   <div class="card"><img src="img/newimgsforhomepage/school-bag-distribution-village.jpeg" alt=""><div class="body"><h4>Education for Every Child</h4><p>School kits, fees and learning support for underprivileged children.</p><a href="education-support.html" class="btn">Donate</a></div></div>
+   <div class="card"><img src="img/newimgsforhomepage/vrudhashram-elders-meal.jpeg" alt=""><div class="body"><h4>Dignity for the Elderly</h4><p>Food, care and companionship for abandoned senior citizens.</p><a href="oldage-support.html" class="btn">Donate</a></div></div>
+   <div class="card"><img src="img/newimgsforhomepage/health-checkup-camp.jpeg" alt=""><div class="body"><h4>Health and Wellness for All</h4><p>Medical camps, medicines and treatment for those who can't afford it.</p><a href="medical-support.html" class="btn">Donate</a></div></div>
+   <div class="card"><img src="img/newimgsforhomepage/sewing-machine-distribution.jpeg" alt=""><div class="body"><h4>Empowering Women</h4><p>Skill training and livelihood support for women to become independent.</p><a href="women-empowerment.html" class="btn">Donate</a></div></div>
+   <div class="card"><img src="img/newimgsforhomepage/notebook-distribution-classroom.jpeg" alt=""><div class="body"><h4>Nurturing Children with Care</h4><p>A safe shelter, love and a family for orphaned children.</p><a href="shelter.html" class="btn">Donate</a></div></div>
+   <div class="card"><img src="img/newimgsforhomepage/food-distribution-children.jpeg" alt=""><div class="body"><h4>Fighting Hunger in India</h4><p>Nutritious meals for children, elders and families in need.</p><a href="donation.html" class="btn">Donate</a></div></div>
+   <div class="card"><img src="img/our-mis6.jpg" alt=""><div class="body"><h4>Medical Appeal</h4><p>Urgent help for children fighting serious illnesses.</p><a href="medical-support.html" class="btn">Donate</a></div></div>
+   <div class="card"><img src="img/newimgsforhomepage/school-kit-distribution-tricolour.jpeg" alt=""><div class="body"><h4>School Kits</h4><p>Bags, books and stationery so every child is ready to learn.</p><a href="support-education-empower-futures.html" class="btn">Donate</a></div></div>
+   <div class="card"><img src="img/newimgsforhomepage/ration-kit-distribution.jpeg" alt=""><div class="body"><h4>Disaster Relief</h4><p>Food, shelter and essentials for families hit by disasters.</p><a href="Disaster-Relief.html" class="btn">Donate</a></div></div>
+  </div>
+ </div>
+</section>
+
+<section class="news">
+ <div class="wrap center">
+  <span class="tag">News &amp; Articles</span>
+  <h2 class="title">Our <span>Latest Articles</span></h2>
+  <div class="grid" style="text-align:left">
+   <div class="card"><img src="img/newimgsforhomepage/student-certificates-outdoor.jpeg" alt=""><div class="body"><div class="date">News &amp; Blog</div><h4>Scholarship certificates for bright students</h4><p>Students were felicitated with scholarship certificates to encourage them to keep learning.</p><a href="blog.html" class="btn">Read More</a></div></div>
+   <div class="card"><img src="img/newimgsforhomepage/holi-colours-vrudhashram.jpeg" alt=""><div class="body"><div class="date">News &amp; Blog</div><h4>Holi celebrations at SOS Vrudhashram</h4><p>Our elders celebrated the festival of colours together with volunteers, sweets and lots of smiles.</p><a href="blog.html" class="btn">Read More</a></div></div>
+   <div class="card"><img src="img/newimgsforhomepage/vrudhashram-carrom-games.jpeg" alt=""><div class="body"><div class="date">News &amp; Blog</div><h4>Joyful days for our elders</h4><p>Games, meals and companionship keep our Vrudhashram residents active and happy.</p><a href="blog.html" class="btn">Read More</a></div></div>
+  </div>
+ </div>
+</section>
+
+<section>
+ <div class="wrap center">
+  <span class="tag">Our Gallery</span>
+  <h2 class="title">Gallery</h2>
+  <div class="gallery">
+   <img src="img/newimgsforhomepage/scholarship-cheque-anniversary-1.jpeg" alt="Scholarship cheque anniversary" loading="lazy"><img src="img/newimgsforhomepage/women-saree-distribution.jpeg" alt="Women saree distribution" loading="lazy"><img src="img/newimgsforhomepage/student-felicitation-rangoli.jpeg" alt="Student felicitation rangoli" loading="lazy"><img src="img/newimgsforhomepage/tree-plantation-teens.jpeg" alt="Tree plantation teens" loading="lazy">
+   <img src="img/newimgsforhomepage/scholarship-cheque-anniversary-2.jpeg" alt="Scholarship cheque anniversary" loading="lazy"><img src="img/newimgsforhomepage/girls-gift-distribution.jpeg" alt="Girls gift distribution" loading="lazy"><img src="img/newimgsforhomepage/student-felicitation-guests.jpeg" alt="Student felicitation guests" loading="lazy"><img src="img/newimgsforhomepage/vrudhashram-elders-room.jpeg" alt="Vrudhashram elders room" loading="lazy">
+   <img src="img/newimgsforhomepage/women-achievers-awards.jpeg" alt="Women achievers awards" loading="lazy"><img src="img/newimgsforhomepage/tree-plantation-volunteers.jpeg" alt="Tree plantation volunteers" loading="lazy"><img src="img/newimgsforhomepage/independence-day-volunteers.jpeg" alt="Independence day volunteers" loading="lazy"><img src="img/newimgsforhomepage/student-felicitation-group.jpeg" alt="Student felicitation group" loading="lazy">
+   <img src="img/newimgsforhomepage/gau-seva-cow-feeding.jpeg" alt="Gau seva cow feeding" loading="lazy"><img src="img/newimgsforhomepage/tree-plantation-kids.jpeg" alt="Tree plantation kids" loading="lazy"><img src="img/newimgsforhomepage/women-auto-drivers-felicitation.jpeg" alt="Women auto drivers felicitation" loading="lazy"><img src="img/newimgsforhomepage/school-bag-distribution-girls.jpeg" alt="School bag distribution girls" loading="lazy">
+  </div>
+  <div style="margin-top:30px"><a href="gallery.html" class="btn">View Full Gallery</a></div>
+ </div>
+</section>
+
+<section class="join">
+ <div class="wrap two">
+  <div class="box">
+   <span class="tag">Mission</span>
+   <h2 class="title">Join Our Mission</h2>
+   <p>We dream of an India where no child sleeps hungry, no elder is left alone and every family has access to education and healthcare. Your support turns that dream into reality.</p>
+   <a href="donation.html" class="btn">Support Us</a>
+  </div>
+  <div class="box">
+   <span class="tag">Become a Volunteer</span>
+   <h2 class="title">Let's Make a Difference</h2>
+   <p>Give your time and skills. Teach, care, organise drives or simply spread the word — every helping hand counts.</p>
+   <a href="join-volunteer.html" class="btn btn-orange">Become A Volunteer</a>
+  </div>
+ </div>
+</section>
+
+<div class="taxinfo">
+ <div class="wrap">
+  <p>As per the Indian Income Tax Department, to claim tax exemption on your donation we require your full name, address and PAN number. Your information is kept strictly confidential and used only for issuing your 80G receipt.</p>
+  <a href="donation.html" class="btn">Donate</a>
+ </div>
+</div>
+
+<footer>
+ <div class="wrap fgrid">
+  <div>
+   <img src="img/footer-logo.png" alt="" class="flogo">
+   <p>Reg No: E-2182<br>Pan No: ABATS7090K</p>
+   <p style="margin-top:10px"><em>Giving is the greatest act of worship.</em></p>
+   <div class="social">
+    <a href="https://www.facebook.com/Sos-Child-Charitable-Trust-108103261143230/" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://twitter.com/soschildcharit1" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+    <a href="https://www.youtube.com/channel/UCyoVWYl5AUNzbOxy4QDxb3Q" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+    <a href="https://www.instagram.com/soschildcharitabletrust/?hl=en" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+   </div>
+  </div>
+  <div>
+   <h5>Service</h5>
+   <ul><li><a href="donation.html">Donation</a></li><li><a href="education-support.html">Education Support</a></li><li><a href="medical-support.html">Medical Appeal</a></li><li><a href="women-empowerment.html">Women Empowerment</a></li><li><a href="oldage-support.html">Old Age Home</a></li></ul>
+  </div>
+  <div>
+   <h5>Quick Links</h5>
+   <ul><li><a href="about.html">About Us</a></li><li><a href="blog.html">Our Blog</a></li><li><a href="shelter.html">Shelter Home</a></li><li><a href="bank-details.html">Bank Details</a></li><li><a href="contact.html">Contact Us</a></li></ul>
+  </div>
+  <div>
+   <h5>Contact Info</h5>
+   <ul>
+    <li><i class="fa fa-clock-o"></i> Mon – Sat: 11:00am – 06:00pm</li>
+    <li><i class="fa fa-map-marker"></i> Room no 401, Pushp Plaza, Manvelpada Rd, Pimpal Wadi, Virar East, Maharashtra 401305</li>
+    <li><i class="fa fa-phone"></i> <a href="tel:+918369685362">+91 8369685362</a></li>
+    <li><i class="fa fa-envelope"></i> <a href="mailto:help@soschildcharitabletrust.org">help@soschildcharitabletrust.org</a></li>
+   </ul>
+  </div>
+ </div>
+ <div class="copy">Copyright © 2026 - SOS Child Charitable Trust. All rights reserved.</div>
+</footer>
+
+<a href="donation.html" class="float-donate"><i class="fa fa-heart"></i> Donate Now</a>
+<div class="mob-bar">
+ <a href="tel:+918369685362" class="call" aria-label="Call"><i class="fa fa-phone"></i></a>
+ <a href="donation.html" class="main"><i class="fa fa-heart"></i> Donate Now</a>
+ <a href="https://wa.me/918369685362" class="wa" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+</div>
+<div id="progress"></div>
+<button id="top" aria-label="Back to top"><i class="fa fa-arrow-up"></i></button>
+<div id="lb"><img alt=""></div>
+<script>
+(function(){
+ // wrap gallery images for hover overlay + lightbox
+ var lb=document.getElementById('lb');
+ [].forEach.call(document.querySelectorAll('.gallery img'),function(im){var a=document.createElement('a');a.href=im.src;im.parentNode.insertBefore(a,im);a.appendChild(im);a.onclick=function(e){e.preventDefault();lb.firstChild.src=im.src;lb.classList.add('on')}});
+ lb.onclick=function(){lb.classList.remove('on')};
+ // wrap card images so zoom stays clipped
+ [].forEach.call(document.querySelectorAll('.card>img'),function(im){var w=document.createElement('div');w.className='imgw';im.parentNode.insertBefore(w,im);w.appendChild(im)});
+ // scroll reveal
+ function mark(sel,cls,stag){[].forEach.call(document.querySelectorAll(sel),function(el,j){el.classList.add('reveal');if(cls)el.classList.add(cls);if(stag)el.style.transitionDelay=(j%stag)*0.12+'s'})}
+ mark('.tag,h2.title,.intro p,.taxinfo p');
+ mark('.cause:not(.rev) .cause-img,.cause.rev>div:not(.cause-img)','left');
+ mark('.cause.rev .cause-img,.cause:not(.rev)>div:not(.cause-img)','right');
+ mark('.card','',3);mark('.gallery a','zoom',4);mark('.stat','',4);mark('.join .box','',2);mark('.fgrid>div','',4);
+ var counted=false;
+ function count(){if(counted)return;counted=true;[].forEach.call(document.querySelectorAll('[data-n]'),function(b){var n=+b.dataset.n,st=null;function f(ts){st=st||ts;var p=Math.min((ts-st)/2000,1);b.textContent=Math.floor(n*(1-Math.pow(1-p,3))).toLocaleString('en-IN')+(p==1?'+':'');if(p<1)requestAnimationFrame(f)}requestAnimationFrame(f)})}
+ if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');if(e.target.classList.contains('stat'))count();io.unobserve(e.target)}})},{threshold:.15});[].forEach.call(document.querySelectorAll('.reveal'),function(el){io.observe(el)})}
+ else{[].forEach.call(document.querySelectorAll('.reveal'),function(el){el.classList.add('in')});count()}
+ // header shrink, progress, back to top
+ var hd=document.querySelector('header'),pg=document.getElementById('progress'),tp=document.getElementById('top');
+ function onS(){var y=scrollY,h=document.documentElement.scrollHeight-innerHeight;pg.style.width=(h>0?y/h*100:0)+'%';hd.classList.toggle('small',y>80);tp.classList.toggle('on',y>500)}
+ addEventListener('scroll',onS,{passive:true});onS();
+ tp.onclick=function(){scrollTo({top:0,behavior:'smooth'})};
+
+ // ===== mouse animations (desktop pointers only) =====
+ var fine=matchMedia('(hover:hover) and (pointer:fine)').matches,calm=matchMedia('(prefers-reduced-motion:reduce)').matches;
+ // click ripple on buttons (all devices)
+ [].forEach.call(document.querySelectorAll('.btn'),function(b){b.addEventListener('click',function(e){var r=b.getBoundingClientRect(),s=document.createElement('span'),z=Math.max(r.width,r.height);s.className='ripple';s.style.cssText='width:'+z+'px;height:'+z+'px;left:'+(e.clientX-r.left-z/2)+'px;top:'+(e.clientY-r.top-z/2)+'px';b.appendChild(s);setTimeout(function(){s.remove()},600)})});
+ if(!fine||calm)return;
+ // custom cursor
+ document.body.classList.add('has-cursor');
+ var dot=document.createElement('div'),ring=document.createElement('div');dot.className='cur-dot';ring.className='cur-ring';document.body.append(dot,ring);
+ var mx=innerWidth/2,my=innerHeight/2,rx=mx,ry=my;
+ addEventListener('mousemove',function(e){mx=e.clientX;my=e.clientY;dot.style.transform='translate('+mx+'px,'+my+'px) translate(-50%,-50%)'});
+ (function loop(){rx+=(mx-rx)*.18;ry+=(my-ry)*.18;ring.style.transform='translate('+rx+'px,'+ry+'px) translate(-50%,-50%)';requestAnimationFrame(loop)})();
+ document.addEventListener('mouseover',function(e){ring.classList.toggle('big',!!e.target.closest('a,button,.card'))});
+ document.addEventListener('mouseleave',function(){dot.style.opacity=ring.style.opacity=0});
+ document.addEventListener('mouseenter',function(){dot.style.opacity=ring.style.opacity=1});
+ // click sparkles
+ document.addEventListener('click',function(e){for(var k=0;k<10;k++){var p=document.createElement('span'),a=Math.random()*6.28,d=30+Math.random()*40;p.className='spark';p.style.cssText='left:'+e.clientX+'px;top:'+e.clientY+'px;background:'+(k%2?'#48C926':'#eea245')+';--dx:'+Math.cos(a)*d+'px;--dy:'+Math.sin(a)*d+'px';document.body.appendChild(p);setTimeout(function(x){x.remove()}.bind(null,p),800)}});
+ // magnetic buttons
+ [].forEach.call(document.querySelectorAll('.btn,.social a,#top'),function(b){b.addEventListener('mousemove',function(e){var r=b.getBoundingClientRect();b.style.transform='translate('+(e.clientX-r.left-r.width/2)*.25+'px,'+(e.clientY-r.top-r.height/2)*.35+'px)'});b.addEventListener('mouseleave',function(){b.style.transform=''})});
+ // 3D tilt + glare on cards and boxes
+ [].forEach.call(document.querySelectorAll('.card,.join .box'),function(c){c.classList.add('tilt');var g;if(c.classList.contains('card')){g=document.createElement('div');g.className='glare';c.appendChild(g)}
+  c.addEventListener('mousemove',function(e){var r=c.getBoundingClientRect(),x=(e.clientX-r.left)/r.width,y=(e.clientY-r.top)/r.height;c.style.transition='transform .1s';c.style.transform='perspective(900px) rotateX('+(.5-y)*10+'deg) rotateY('+(x-.5)*12+'deg) translateY(-6px)';if(g){c.style.setProperty('--gx',x*100+'%');c.style.setProperty('--gy',y*100+'%')}});
+  c.addEventListener('mouseleave',function(){c.style.transition='transform .5s';c.style.transform=''})});
+ // parallax: cause photos follow mouse, hero shifts slightly
+ var imgs=document.querySelectorAll('.cause-img');
+ [].forEach.call(imgs,function(ci){ci.addEventListener('mousemove',function(e){var r=ci.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;ci.firstElementChild.style.transform='perspective(800px) rotateY('+x*8+'deg) rotateX('+(-y*8)+'deg) scale(1.03)'});ci.addEventListener('mouseleave',function(){ci.firstElementChild.style.transform=''})});
+ var hero=document.getElementById('hero'),btns=hero.querySelectorAll('button');
+ hero.addEventListener('mousemove',function(e){var x=e.clientX/innerWidth-.5;[].forEach.call(btns,function(b){b.style.marginLeft=x*14+'px'})});
+})();
+(function(){
+ var s=document.getElementById('slides'),n=s.children.length,i=0,d=document.getElementById('dots'),t;
+ for(var k=0;k<n;k++){var e=document.createElement('span');e.dataset.i=k;d.appendChild(e);}
+ function go(x){i=(x+n)%n;s.style.transform='translateX(-'+i*100+'%)';[].forEach.call(d.children,function(c,j){c.className=j==i?'on':''});[].forEach.call(s.children,function(c,j){c.classList.toggle('active',j==i)});clearInterval(t);t=setInterval(function(){go(i+1)},5000);}
+ d.onclick=function(e){if(e.target.dataset.i)go(+e.target.dataset.i)};
+ document.querySelector('.hero .prev').onclick=function(){go(i-1)};
+ document.querySelector('.hero .next').onclick=function(){go(i+1)};
+ go(0);
+ var m=document.getElementById('menu');
+ document.getElementById('burger').onclick=function(){m.classList.toggle('open')};
+ [].forEach.call(m.querySelectorAll('li>ul'),function(u){u.previousElementSibling.onclick=function(e){if(innerWidth<=960){e.preventDefault();u.parentNode.classList.toggle('open')}}});
+})();
+</script>
+</body>
+</html>
